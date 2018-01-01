@@ -199,9 +199,9 @@ void CONSOLIDATE(FibHeap *H){
     HeapNode *w, *x, *start, *y, *tmp, *r;
     int d,i;
     int nodenum = H->n;
-    HeapNode* A[nodenum*nodenum]; //这里应该是A[D(n)]，但D(n)只知道是O(lgn)，不容易确定，干脆取大一点
-    memset(A,0,nodenum*nodenum*sizeof(HeapNode *));
-    
+    HeapNode* A[nodenum]; //这里应该是A[D(n)]，但D(n)只知道是O(lgn)，不容易确定，干脆取大一点
+    memset(A,0,nodenum*sizeof(HeapNode *));
+
     start = H->rootlist;
     if (start != NULL) w = H->rootlist->right;
     else w = NULL;
@@ -244,7 +244,7 @@ void CONSOLIDATE(FibHeap *H){
 
     H->min = NULL;
     //处理剩余的度数唯一的结点
-    for (i=0;i<nodenum*nodenum;++i){
+    for (i=0;i<nodenum ;++i){
         if (A[i] != NULL){
             if (H->min == NULL){    //H->min仍为空，即现在无最小
                 H->rootlist = A[i]; //建新堆

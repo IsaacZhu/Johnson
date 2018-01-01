@@ -39,8 +39,6 @@ void buildgraph(graph *G, int nodenum, int arcnum, int *arcfrom, int *arcto, int
 
 //初始化
 void InitializeSingleSource(graph *G, int s,int *d,int *prior){
-    //memset(d,INF,(MAXSIZE+2)*sizeof(int));      //用65536来代表无穷
-    //memset(prior,0,(MAXSIZE+2)*sizeof(int));    //前驱则设为0
     int i;
     for (i=1;i<=G->vertexnum;++i){
         d[i] = INF;
@@ -131,7 +129,7 @@ void Dijkstra(graph *G, int s, int *d, int *prior){
         u = x->info;
         set[setsize++] = u;
         for (i=1;i<=nodenum;++i){
-            if (G->adj[u][i] != INF && !inset(set,setsize,i)){   //边存在
+            if (G->adj[u][i] != INF ){   //边存在
                 flag = Relax(G,u,i,d,prior,&k);//松弛
                 if(flag != 0){     //如果发生了松弛
                     x = FibHeapLookFor(&H, i);
@@ -183,30 +181,29 @@ void DCorrection(graph *G, int s, int nodenum, int *prior){
 
 //Johnson算法 计算所有点对间的最短路径
 void Johnson(graph *G){
-    graph *Gp = (graph *)malloc(sizeof(graph));
     graph *initialG = (graph *)malloc(sizeof(graph));   //保存G的权值信息
     int i,j,s,d[MAXSIZE+2];
     int nodenum = G->vertexnum;
-    memcpy(Gp->adj,G->adj,(MAXSIZE+2)*(MAXSIZE+2)*sizeof(int));
-    memcpy(initialG->adj,G->adj,(MAXSIZE+2)*(MAXSIZE+2)*sizeof(int));
     //计算加入s的G'
     s = nodenum + 1;
-    Gp->vertexnum = nodenum + 1;
+    G->vertexnum ++;
     for (i=1;i<=s;++i){   //w(s,u) = 0
-        Gp->adj[s][i] = 0;
-        Gp->adj[i][s] = INF;    //w(u,s) = 无穷 
+        G->adj[s][i]=0;
+        G->adj[i][s] = INF; //w(u,s) = 无穷
     }
-    Gp->adj[s][s] = 0;
+    G->adj[s][s]=0;
 
     //对G'及s 计算Bellman-Ford 并设置h(v)
-    if (BellmanFord(Gp,s,h,prior) == 0){
+    if (BellmanFord(G,s,h,prior) == 0){
         printf("图中有负权回路\n");
         exit(0);
     }
 
+    G->vertexnum--;
     //更新w'(u,v)=w(u,v)+h(u)-h(v)
     for (i=1;i<=nodenum;++i){
         for (j=1;j<=nodenum;++j){
+            initialG->adj[i][j] = G->adj[i][j];
             if (G->adj[i][j] != INF){   //边存在,更新权值
                 G->adj[i][j] += (h[i] - h[j]);
             }
@@ -263,9 +260,7 @@ int main(){
 
         buildgraph(&G,scale[i],arcnum,arcfrom,arcto,arcweigh);  //建立图G
         timestart();
-        for (j=1;j<10;++j){
         Johnson(&G);
-        }
         timeend();
 
 		//output result
