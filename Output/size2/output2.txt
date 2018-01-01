@@ -1,0 +1,33 @@
+N is 16:
+s:1
+1 d:0 prior:0  2 d:13 prior:13  3 d:16 prior:5  4 d:11 prior:13  5 d:8 prior:13  6 d:14 prior:11  7 d:25 prior:12  8 d:16 prior:9  9 d:16 prior:3  10 d:INF prior:0  11 d:14 prior:4  12 d:9 prior:13  13 d:6 prior:1  14 d:16 prior:12  15 d:12 prior:1  16 d:16 prior:15  
+s:2
+1 d:3 prior:2  2 d:0 prior:0  3 d:5 prior:2  4 d:5 prior:9  5 d:11 prior:9  6 d:5 prior:2  7 d:28 prior:12  8 d:5 prior:9  9 d:5 prior:3  10 d:INF prior:0  11 d:8 prior:4  12 d:12 prior:13  13 d:9 prior:1  14 d:12 prior:4  15 d:5 prior:9  16 d:9 prior:15  
+s:3
+1 d:12 prior:16  2 d:12 prior:16  3 d:0 prior:0  4 d:0 prior:9  5 d:6 prior:9  6 d:3 prior:11  7 d:37 prior:12  8 d:0 prior:9  9 d:0 prior:3  10 d:INF prior:0  11 d:3 prior:4  12 d:21 prior:13  13 d:18 prior:1  14 d:7 prior:4  15 d:0 prior:9  16 d:4 prior:15  
+s:4
+1 d:20 prior:16  2 d:20 prior:16  3 d:22 prior:5  4 d:0 prior:0  5 d:14 prior:9  6 d:3 prior:11  7 d:45 prior:12  8 d:8 prior:9  9 d:8 prior:11  10 d:INF prior:0  11 d:3 prior:4  12 d:29 prior:13  13 d:26 prior:1  14 d:7 prior:4  15 d:8 prior:9  16 d:12 prior:15  
+s:5
+1 d:20 prior:16  2 d:20 prior:16  3 d:8 prior:5  4 d:8 prior:9  5 d:0 prior:0  6 d:11 prior:11  7 d:45 prior:12  8 d:8 prior:9  9 d:8 prior:3  10 d:INF prior:0  11 d:11 prior:4  12 d:29 prior:13  13 d:26 prior:1  14 d:15 prior:4  15 d:8 prior:9  16 d:12 prior:15  
+s:6
+1 d:30 prior:16  2 d:30 prior:16  3 d:32 prior:5  4 d:13 prior:6  5 d:24 prior:9  6 d:0 prior:0  7 d:55 prior:12  8 d:18 prior:9  9 d:18 prior:6  10 d:INF prior:0  11 d:16 prior:4  12 d:39 prior:13  13 d:36 prior:1  14 d:20 prior:4  15 d:18 prior:9  16 d:22 prior:15  
+s:7
+1 d:9 prior:7  2 d:22 prior:13  3 d:25 prior:5  4 d:11 prior:9  5 d:17 prior:9  6 d:14 prior:11  7 d:0 prior:0  8 d:11 prior:9  9 d:11 prior:7  10 d:INF prior:0  11 d:14 prior:4  12 d:18 prior:13  13 d:15 prior:1  14 d:18 prior:4  15 d:11 prior:9  16 d:15 prior:15  
+s:8
+1 d:19 prior:2  2 d:16 prior:8  3 d:21 prior:2  4 d:16 prior:9  5 d:22 prior:9  6 d:19 prior:11  7 d:44 prior:12  8 d:0 prior:0  9 d:16 prior:8  10 d:INF prior:0  11 d:19 prior:4  12 d:28 prior:13  13 d:25 prior:1  14 d:23 prior:4  15 d:16 prior:9  16 d:20 prior:15  
+s:9
+1 d:12 prior:16  2 d:12 prior:16  3 d:14 prior:5  4 d:0 prior:9  5 d:6 prior:9  6 d:3 prior:11  7 d:37 prior:12  8 d:0 prior:9  9 d:0 prior:0  10 d:INF prior:0  11 d:3 prior:4  12 d:21 prior:13  13 d:18 prior:1  14 d:7 prior:4  15 d:0 prior:9  16 d:4 prior:15  
+s:10
+1 d:11 prior:2  2 d:8 prior:10  3 d:1 prior:10  4 d:1 prior:9  5 d:3 prior:10  6 d:0 prior:11  7 d:7 prior:10  8 d:1 prior:9  9 d:1 prior:3  10 d:0 prior:0  11 d:0 prior:10  12 d:20 prior:13  13 d:17 prior:1  14 d:2 prior:10  15 d:1 prior:9  16 d:5 prior:15  
+s:11
+1 d:17 prior:16  2 d:17 prior:16  3 d:19 prior:5  4 d:5 prior:9  5 d:11 prior:9  6 d:0 prior:11  7 d:42 prior:12  8 d:5 prior:9  9 d:5 prior:11  10 d:INF prior:0  11 d:0 prior:0  12 d:26 prior:13  13 d:23 prior:1  14 d:12 prior:4  15 d:5 prior:9  16 d:9 prior:15  
+s:12
+1 d:1 prior:12  2 d:14 prior:13  3 d:17 prior:5  4 d:12 prior:13  5 d:9 prior:13  6 d:7 prior:11  7 d:16 prior:12  8 d:12 prior:9  9 d:12 prior:11  10 d:INF prior:0  11 d:7 prior:12  12 d:0 prior:0  13 d:7 prior:1  14 d:7 prior:12  15 d:12 prior:9  16 d:16 prior:15  
+s:13
+1 d:4 prior:12  2 d:7 prior:13  3 d:10 prior:5  4 d:5 prior:13  5 d:2 prior:13  6 d:8 prior:11  7 d:19 prior:12  8 d:10 prior:9  9 d:10 prior:3  10 d:INF prior:0  11 d:8 prior:4  12 d:3 prior:13  13 d:0 prior:0  14 d:10 prior:12  15 d:10 prior:9  16 d:14 prior:15  
+s:14
+1 d:19 prior:2  2 d:16 prior:14  3 d:21 prior:2  4 d:20 prior:6  5 d:27 prior:9  6 d:7 prior:14  7 d:44 prior:12  8 d:21 prior:9  9 d:21 prior:3  10 d:INF prior:0  11 d:23 prior:4  12 d:28 prior:13  13 d:25 prior:1  14 d:0 prior:0  15 d:21 prior:9  16 d:25 prior:15  
+s:15
+1 d:12 prior:16  2 d:12 prior:16  3 d:16 prior:5  4 d:16 prior:9  5 d:8 prior:16  6 d:17 prior:2  7 d:37 prior:12  8 d:16 prior:9  9 d:16 prior:3  10 d:INF prior:0  11 d:19 prior:4  12 d:21 prior:13  13 d:18 prior:1  14 d:23 prior:4  15 d:0 prior:0  16 d:4 prior:15  
+s:16
+1 d:8 prior:16  2 d:8 prior:16  3 d:12 prior:5  4 d:12 prior:9  5 d:4 prior:16  6 d:13 prior:2  7 d:33 prior:12  8 d:12 prior:9  9 d:12 prior:3  10 d:INF prior:0  11 d:15 prior:4  12 d:17 prior:13  13 d:14 prior:1  14 d:19 prior:4  15 d:12 prior:9  16 d:0 prior:0  

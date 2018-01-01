@@ -1,0 +1,17 @@
+N is 8:
+s:1
+1 d:0 prior:0  2 d:6 prior:4  3 d:14 prior:4  4 d:6 prior:1  5 d:11 prior:8  6 d:10 prior:8  7 d:5 prior:1  8 d:6 prior:2  
+s:2
+1 d:1 prior:8  2 d:0 prior:0  3 d:15 prior:4  4 d:7 prior:1  5 d:5 prior:8  6 d:4 prior:8  7 d:3 prior:8  8 d:0 prior:2  
+s:3
+1 d:6 prior:3  2 d:12 prior:7  3 d:0 prior:0  4 d:12 prior:1  5 d:17 prior:8  6 d:16 prior:8  7 d:4 prior:3  8 d:12 prior:2  
+s:4
+1 d:1 prior:8  2 d:0 prior:4  3 d:8 prior:4  4 d:0 prior:0  5 d:5 prior:8  6 d:4 prior:8  7 d:3 prior:8  8 d:0 prior:2  
+s:5
+1 d:4 prior:8  2 d:3 prior:4  3 d:11 prior:4  4 d:3 prior:5  5 d:0 prior:0  6 d:0 prior:5  7 d:6 prior:8  8 d:3 prior:2  
+s:6
+1 d:8 prior:8  2 d:10 prior:4  3 d:18 prior:4  4 d:10 prior:5  5 d:7 prior:6  6 d:0 prior:0  7 d:7 prior:6  8 d:7 prior:6  
+s:7
+1 d:9 prior:8  2 d:8 prior:7  3 d:23 prior:4  4 d:15 prior:1  5 d:13 prior:8  6 d:12 prior:8  7 d:0 prior:0  8 d:8 prior:2  
+s:8
+1 d:1 prior:8  2 d:7 prior:4  3 d:15 prior:4  4 d:7 prior:1  5 d:5 prior:8  6 d:4 prior:8  7 d:3 prior:8  8 d:0 prior:0  
