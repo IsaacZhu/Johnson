@@ -19,6 +19,9 @@ int h[MAXSIZE+2];
 int prior[MAXSIZE+2];
 int distance[MAXSIZE+2][MAXSIZE+2];
 int priorrecord[MAXSIZE+2][MAXSIZE+2];  //记录前驱
+int wayrecord[MAXSIZE+2][MAXSIZE+2];    //记录最短路径
+int waysizerecord[MAXSIZE+2];           //每条最短路径的长度
+int wayrecordcount;                     //最短路径的数量
 
 void buildgraph(graph *G, int nodenum, int arcnum, int *arcfrom, int *arcto, int *arcweigh){
     int i,j;
@@ -220,6 +223,7 @@ void Johnson(graph *G){
 
 int main(){
 	int i,j,k,arcnum;
+    int m,u,v,visited[MAXSIZE+2],flag;
     arcnum = MAXSIZE*log2(MAXSIZE);
     int arcfrom[arcnum],arcto[arcnum],arcweigh[arcnum];
     int scale[7] = {0,8,16,32,64,128,256};
@@ -288,8 +292,32 @@ int main(){
             }
             fprintf(fpr,"\n");
         }
-        
 
+        fprintf(fpr,"\n最短路径输出:\n");
+        for (j=1;j<scale[i];++j){
+            wayrecordcount = 0;
+            for (k=0;k<scale[i];++k){
+                waysizerecord[k] = 0;
+            }
+            for (k=1;k<scale[i];++k){
+                u = k;
+                while (u != j && u != 0){
+                    wayrecord[wayrecordcount][waysizerecord[wayrecordcount]++] = u;
+                    u = priorrecord[j][u];
+                }
+                wayrecord[wayrecordcount][waysizerecord[wayrecordcount]++] = u;
+                wayrecordcount++;
+            }
+            for (k=0;k<wayrecordcount;++k){
+                fprintf(fpr,"路径%d至%d:\n",j,k+1);
+                fprintf(fpr,"%d",wayrecord[k][waysizerecord[k]-1]);
+                for (m=waysizerecord[k]-2;m>=0;--m){
+                    fprintf(fpr,",%d",wayrecord[k][m]);
+                }
+                fprintf(fpr,"\n");
+                fprintf(fpr,"长度:%d\n\n",distance[j][k+1]);
+            }
+        }//j for
 
 		//output time to screen
 		outputtime();
